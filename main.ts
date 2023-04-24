@@ -21,12 +21,12 @@ const DEFAULT_SETTINGS: GemmySettings = {
 
 
 const GEMMY_IDLE_QUOTES = [
-	"Did you know that a vault is just a folder of plain text notes?",
-	"I see you're checking out a ChatGPT plugin, would you consider me instead?",
-	"You have plugins that you can update!",
-	"Hi I'm Gemmy! Like Clippy but shinier!",
-	"Everything is connected. Everything.",
-	`It looks like you’re writing a note.
+	"You can't arrest us! We already ate the evidence!",
+	"Don't ever split the party!",
+	"You deserve your own fate if you hit a mimic with your member!",
+	"I don't kill without reason. Fortunately, I'm bored. Reason enough!",
+	"Ah, my favoured enemy. Something alive.",
+	`I'm not deprived, I'm depraved.
 
 Would you like help?
 - Get help with writing the note
