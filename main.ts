@@ -15,37 +15,37 @@ interface GemmySettings {
 }
 
 const DEFAULT_SETTINGS: GemmySettings = {
-	idleTalkFrequency: 5,
-	writingModeGracePeriod: 5
+	idleTalkFrequency: 1,
+	writingModeGracePeriod: 1
 };
 
 
 const GEMMY_IDLE_QUOTES = [
 	"You can't arrest us! We already ate the evidence!",
 	"Don't ever split the party!",
-	"You deserve your own fate if you hit a mimic with your member!",
+	"If you kill a hive mind, is that murder or genocide?",
+	"Roll initiative!",
+	"You can try!",
+	"WHY WOULD YOU DO THAT!",
+	"That dice needs to be retired!",
 	"I don't kill without reason. Fortunately, I'm bored. Reason enough!",
 	"Ah, my favoured enemy. Something alive.",
-	`I'm not deprived, I'm depraved.
-
-Would you like help?
-- Get help with writing the note
-- Just type the note without help
-- [ ] Don’t show me this tip again`,
-	'Can’t decide which note to work on? Try the Random Note core plugin!',
-	'Are you sure you don’t want to upload all your notes just so we can chat?',
-	'How tall would all your notes be if you stacked them up?',
-	'Wanna teach me to say things? Find me on GitHub and open a pull request!',
-	'Have you considered using Comic Sans?'
-];
+	"I slap the barrel with my member!... the 'barrel' open's its mouth!",
+	"I'm not deprived, I'm depraved.",
+	"You need a free hand to attempt a grapple"
+	]
+	;
 
 const WRITING_MODE_QUOTES = [
 	`Is that the best you can do? Keep writing!`,
 	`Write first, editor later.`,
+	`AI could probably write a better note...`,
 	`I love hearing your keyboard. Don't stop.`,
 	`How about we review some old notes today?`,
-	`Stuck? Try journaling what happened today and see if that gives you inspiration.`,
+	`Why not just use a template?`,
+	`Doesn't matter how much you plan... they will derail anyway!`,
 	`Maybe it's time to go get some water or coffee.`,
+	`That's not how rivers are in real-life...`,
 	`Anything is better than a blank page, even me. Write something!`
 ];
 
