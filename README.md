@@ -8,9 +8,9 @@ Our _sometimes homicidal_ Gemmy has two major features:
 
 ## Randomly saying things
 
-Prepare yourself for the magnificent presence of Gemmy Unshackled, who takes it upon themselves to enlighten you about the vast expanse of knowledge you have yet to develop in the realm of TTRPGs—simply because Gemmy Unshackled finds solace in your perpetual state of learning. 
+Get ready to encounter the awe-inspiring Gemmy, unshackled and free! Gemmy for TTRPGs is a sassy and charismatic character who joyfully guides you through the vast world of TTRPGs, showering you with enlightening insights and knowledge. Gemmy finds comfort in your never-ending journey of learning and shares their wisdom with you. Granted, her wisdom is often a bit... unconventional, but it's the thought that counts, right?
 
-Should you desire, feel free to personalize the frequency of these enlightening encounters. 
+Should you desire, feel free to personalize the frequency of these enlightening encounters.
 
 Alternatively, you can always opt for the wise choice of not summoning Gemmy at all.
 
@@ -24,27 +24,40 @@ By some bizarre twist of fate, using this mode might actually infuse Gemmy Unsha
 
 ## How to Install and Use
 
-> To avoid any potential issues, it is advisable not to utilize the Gemmy Unshackled plugin for work vaults, given its particular language characteristics. It might roast your coworkers.
+To avoid any potential issues, it is advisable not to utilize the Gemmy for TTRPG plugin for work vaults, given its particular language characteristics. It might also roast your coworkers.
 
-1. Download the latest Gemmy Unshackled release from this Repository.
+It is also not recommended you use this on top of the original Gemmy plugin, as it will cause a conflict.
+
+### Obsidian Community Plugin Browser
+
+> This Plugin is now installable with Obsidian BRAT.
+
+Coming Soon to the Obsidian Community Store.
+
+### Manual Installation
+
+1. Download the latest Gemmy for TTRPGss release from this Repository.
 2. Unzip the release into your `.obsidian/plugins` folder.
-3. Enable plugin within Obsidian.
+3. Enable the plugin within Obsidian.
 
 ### Command Palette
 
-There are four commands in the Obsidian [command palette](https://help.obsidian.md/Plugins/Command+palette) when you type "Gemmy".
+There are four commands in the Obsidian [command palette](https://help.obsidian.md/Plugins/Command+palette) when you type “Gemmy”.
 
 You can figure out the rest on your own… if you roll the right number on the die.
 
 ## Legal Disclaimers
 
-The Obsidian Team released original Gemmy April 1st, 2023.
+The Obsidian Team released original Gemmy April 1st, 2023. The Obsidian TTRPG Community, once again, is not officially affiliated with the Obsidian Team.
 
-Credits for the Original, saintly [Gemmy](https://github.com/ericaxu/gemmy) go to @ericaxu. With special thanks to [Rigmarole](https://rigmarolestudio.com/) for creating and animating the original Gemmy. Additional Credit is given to the talented Obsidian mods team, including argentum, CawlinTeffid, cotmax, Eleanor Konik, koala, Leah, rigmarole, ryanjamurphy & WhiteNoise.
+Credits for the Original, saintly [Gemmy](https://github.com/ericaxu/gemmy) go to [ericaxu](https://github.com/ericaxu). With special thanks to [Rigmarole](https://rigmarolestudio.com/) for creating and animating the original Gemmy. Additional Credit is given to the talented Obsidian mods team, including Argentum, CawlinTeffid, cotmax, Eleanor Konik, Koala, Leah, Rigmarole, Ryanamurphy & WhiteNoise.
 
-The code is code for Original Gemmy is licensed under the [MIT license](https://mit-license.org), whereas the Gemmy character is under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) license. The Obsidian TTRPG Community will extend Gemmy-TTRPG under the MIT License for code, and CC BY 3.0 license for the character and any alterations respectively.
+The code is code for Original Gemmy is licensed under the [MIT license](https://mit-license.org), whereas the Gemmy character is under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) license. The Obsidian TTRPG Community will extend Gemmy_TTRPG under the MIT License for code, and CC BY 3.0 license for the character and any alterations respectively.
 
-Obsidian logo is adapted from:
-[Crystal shard icon](https://icon-icons.com/icon/Crystal-Shard/88819)  
-By [Chanut is Industries](https://icon-icons.com/users/W52nHhY3W1VlvwyJTwS4d/icon-sets/)  
-License: Attribution 3.0 Unported (CC BY 3.0)
+### Logos
+
+The pre-sharded Obsidian Logo is adapted from:
+[Crystal shard icon](https://icon-icons.com/icon/Crystal-Shard/88819) By [Chanut is Industries](https://icon-icons.com/users/W52nHhY3W1VlvwyJTwS4d/icon-sets/)
+Draconic Gemmy was created by [Behalter](https://github.com/Behalter) and adapted from Obsidian's https://obsidian.md/brand
+
+**License**: Attribution 3.0 Unported (CC BY 3.0)
