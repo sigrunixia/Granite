@@ -67,7 +67,9 @@ export const GRANITE_BASE_QUOTES: Quotes = {
 
 export const GEMMY_EXCLUSIVE_QUOTES: Quotes = {
 	general: [],
-	idle: [],
+	idle: [
+		`Are you pooping?`,
+	],
 	writingMode: [],
 };
 
