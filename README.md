@@ -12,9 +12,7 @@ Inspired by the saintly [Gemmy](https://github.com/ericaxu/gemmy), the Obsidian 
 
 ### Random Quotes
 
-Like the original Gemmy, this plugin is based around your "animated pet rock" talking to you, and so it does this on an interval of your choosing within Granite's settings. Sometimes they whisper words of encouragement, and other times they laugh at your writer's block.
-
-> :sparkles: **Coming Soon**: Individualized Quotes per Character
+Like the original Gemmy, this plugin is based around your "animated pet rock" talking to you, and so it does this on an interval of your choosing within Granite's settings. Sometimes they whisper words of encouragement, and other times they laugh at your writer's block. You can also set individual quotes per character.
 
 ### Writing mode
 
