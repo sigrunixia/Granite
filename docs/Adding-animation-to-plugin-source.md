@@ -143,7 +143,7 @@ public readonly drakeAnimationMap: Record<AnimationType, string>;
 
 ### Animation Map
 
-Then further down, define the animation map.
+Then further down, define the animation map. This is where you will tell Granite what animation to use for each emote.
 
 **Before**:
 
