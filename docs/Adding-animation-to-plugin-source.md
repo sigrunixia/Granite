@@ -124,7 +124,7 @@ import DISAPPOINT_IMG_PIKACHU from '../animations/pikachu/pikachu_disappoint.gif
 
 ### Animations class
 
-Within the animations export class, you will want to add your animation map.
+Within the animations class, you will want to add your animation map.
 
 **Before**: 
 ```ts
