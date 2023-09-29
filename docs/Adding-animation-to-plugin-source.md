@@ -74,7 +74,6 @@ In the QuoteManager class, you will want to add your new character to the quote 
 				[GraniteMode.IDLE]: this.getIdleQuotes(DRAKE_EXCLUSIVE_QUOTES),
 				[GraniteMode.WRITING]: this.getWritingQuotes(DRAKE_EXCLUSIVE_QUOTES),
 			},
-		};
 			[AnimationSourceType.PIKACHU]: {
 				[GraniteMode.IDLE]: this.getIdleQuotes(PIKACHU_EXCLUSIVE_QUOTES),
 				[GraniteMode.WRITING]: this.getWritingQuotes(PIKACHU_EXCLUSIVE_QUOTES),
@@ -88,7 +87,7 @@ To add your newly created animations into Granite to be rendered, we need to tel
 
 ### Imports
 
-Under the import section, we need to map a value to the animations.
+Under the import section, we need to import the animations under unique names.
 
 **Before**:
 ```ts
@@ -105,8 +104,8 @@ import DISAPPOINT_IMG_DRAKE from '../animations/drake/drake_disappoint.gif';
 After:
 ```ts
 // Draconic Animations  
-import EMERGE_MOTION_DRAKE from '../animations/PIKACHU/PIKACHU_emerge.gif';  
-import POP_MOTION_DRAKE from '../animations/PIKACHU/PIKACHU_pop.gif';  
+import EMERGE_MOTION_DRAKE from '../animations/drake/drake_emerge.gif';  
+import POP_MOTION_DRAKE from '../animations/drake/drake_pop.gif';  
 import DISAPPEAR_MOTION_DRAKE from '../animations/drake/drake_disappear.gif';  
 import ANGRY_MOTION_DRAKE from '../animations/drake/drake_angry.gif';  
 import LOOK_MOTION_DRAKE from '../animations/drake/drake_lookAround.gif';  
@@ -114,9 +113,9 @@ import IDLE_MOTION_DRAKE from '../animations/drake/drake_idle.gif';
 import DISAPPOINT_IMG_DRAKE from '../animations/drake/drake_disappoint.gif';
 
 // Pikachu Animations
-import EMERGE_MOTION_PIKACHU from '../animations/drake/drake_emerge.gif';  
-import POP_MOTION_PIKACHU from '../animations/drake/drake_pop.gif';  
-import DISAPPEAR_MOTION_PIKACHU from '../animations/drake/pikachu_disappear.gif';  
+import EMERGE_MOTION_PIKACHU from '../animations/pikachu/pikachu_emerge.gif';  
+import POP_MOTION_PIKACHU from '../animations/pikachu/pikachu_pop.gif';  
+import DISAPPEAR_MOTION_PIKACHU from '../animations/pikachu/pikachu_disappear.gif';  
 import ANGRY_MOTION_PIKACHU from '../animations/pikachu/pikachu_angry.gif';  
 import LOOK_MOTION_PIKACHU from '../animations/pikachu/pikachu_lookAround.gif';  
 import IDLE_MOTION_PIKACHU from '../animations/pikachu/pikachu_idle.gif';  
@@ -310,5 +309,3 @@ async loadSettings() {
     await this.saveSettings();  
 }
 ```
-
-
