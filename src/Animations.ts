@@ -19,6 +19,17 @@ import LOOK_MOTION_DRAKE from '../animations/drake/drake_lookAround.gif';
 import IDLE_MOTION_DRAKE from '../animations/drake/drake_idle.gif';
 import DISAPPOINT_IMG_DRAKE from '../animations/drake/drake_disappoint.gif';
 
+// Importing a new character? Copy the below and change the NAME with your character name.
+//
+// Name Animations
+// import EMERGE_MOTION_NAME from '../animations/name/name_emerge.gif';
+// import POP_MOTION_NAME from '../animations/name/name_pop.gif';
+// import DISAPPEAR_MOTION_NAME from '../animations/name/name_disappear.gif';
+// import ANGRY_MOTION_NAME from '../animations/name/name_angry.gif';
+// import LOOK_MOTION_NAME from '../animations/name/name_lookAround.gif';
+// import IDLE_MOTION_NAME from '../animations/name/name_idle.gif';
+// import DISAPPOINT_IMG_NAME from '../animations/name/name_disappoint.gif';
+
 export enum AnimationType {
 	EMERGE = 'emerge',
 	POP_MOTION = 'pop_motion',
@@ -32,6 +43,10 @@ export enum AnimationType {
 export class Animations {
 	public readonly plugin: GranitePlugin;
 
+	// Copy and paste this below, where name is your new character name.
+	// the mappings from an animation type to an actual image file for the name
+	// public readonly nameAnimationMap: Record<AnimationType, string>;
+
 	// the mappings from an animation type to an actual image file for the drakeling
 	public readonly drakeAnimationMap: Record<AnimationType, string>;
 	// the mappings from an animation type to an actual image file for the granite
@@ -42,6 +57,19 @@ export class Animations {
 
 	constructor(plugin: GranitePlugin) {
 		this.plugin = plugin;
+
+		// Add your character to the animation map.
+		// Replace name with your new character's name.
+		//
+		// 		this.nameAnimationMap = {
+		// 			[AnimationType.EMERGE]: EMERGE_MOTION_NAME,
+		// 			[AnimationType.POP_MOTION]: POP_MOTION_NAME,
+		// 			[AnimationType.DISAPPEAR_MOTION]: DISAPPEAR_MOTION_NAME,
+		// 			[AnimationType.ANGRY_MOTION]: ANGRY_MOTION_NAME,
+		// 			[AnimationType.LOOK_MOTION]: LOOK_MOTION_NAME,
+		// 			[AnimationType.IDLE_MOTION]: IDLE_MOTION_NAME,
+		// 			[AnimationType.DISAPPOINT_IMG]: DISAPPOINT_IMG_NAME,
+		// 		};
 
 		this.drakeAnimationMap = {
 			[AnimationType.EMERGE]: EMERGE_MOTION_DRAKE,
@@ -64,6 +92,8 @@ export class Animations {
 		};
 
 		this.animationSourceMap = {
+			// Add your character to the animation source map, where name is your character name.
+			// [AnimationSourceType.NAME]: this.nameAnimationMap,
 			[AnimationSourceType.DRAKE]: this.drakeAnimationMap,
 			[AnimationSourceType.GEMMY]: this.gemmyAnimationMap,
 		};

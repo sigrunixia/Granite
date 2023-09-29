@@ -2,6 +2,8 @@ import GranitePlugin from './main';
 import { AnimationSourceType } from './Setting';
 import { GraniteMode, GraniteState } from './Granite';
 import { DRAKE_EXCLUSIVE_QUOTES, GEMMY_EXCLUSIVE_QUOTES, GRANITE_BASE_QUOTES, Quotes } from './quotes/Quotes';
+// When you need to add a character, add the following to the above: NAME_EXCLUSIVE_QUOTES,
+// Example import { NAME_EXCLUSIVE_QUOTES, DRAKE_EXCLUSIVE_QUOTES, GEMMY_EXCLUSIVE_QUOTES, GRANITE_BASE_QUOTES, Quotes } from './quotes/Quotes';
 
 export class QuoteManager {
 	public readonly plugin: GranitePlugin;
@@ -20,6 +22,13 @@ export class QuoteManager {
 				[GraniteMode.IDLE]: this.getIdleQuotes(DRAKE_EXCLUSIVE_QUOTES),
 				[GraniteMode.WRITING]: this.getWritingQuotes(DRAKE_EXCLUSIVE_QUOTES),
 			},
+			// Copy and paste below to add your character's source here.
+			// Replace NAME with your new character's name
+			//
+			// [AnimationSourceType.NAME]: {
+			// 	[GraniteMode.IDLE]: this.getIdleQuotes(NAME_EXCLUSIVE_QUOTES),
+			// 	[GraniteMode.WRITING]: this.getWritingQuotes(NAME_EXCLUSIVE_QUOTES),
+			// },
 		};
 
 		console.log('granite | build quote map', this.quoteMap);
