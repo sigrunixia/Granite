@@ -67,6 +67,12 @@ export default class GranitePlugin extends Plugin {
 		this.granite.disappear();
 	}
 
+	// Within the async, update your new character by adding them to the load list,
+	// where name is your character name and type is the type of creature it is.
+	// 		if (this.settings.animationSource === 'type') {
+	// 			this.settings.animationSource = AnimationSourceType.NAME;
+	// 		}
+
 	async loadSettings() {
 		this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
 

@@ -4,6 +4,8 @@ import GranitePlugin from './main';
 export enum AnimationSourceType {
 	GEMMY = 'gemmy',
 	DRAKE = 'drake',
+	// When you need to add a new character, add the following above:
+	// NAME = 'name',
 }
 
 export interface GraniteSettings {
@@ -41,6 +43,8 @@ export class GraniteSettingsTab extends PluginSettingTab {
 				dropdown
 					.addOption(AnimationSourceType.GEMMY, 'Gemmy')
 					.addOption(AnimationSourceType.DRAKE, 'Drake')
+					// When you need to add a new character, copy and paste the following line above this one, and change the NAME
+					// .addOption(AnimationSourceType.NAME, 'Name')
 					.setValue(this.plugin.settings.animationSource)
 					.onChange(async value => {
 						// Explicitly cast the value to the correct type
