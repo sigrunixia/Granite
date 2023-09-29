@@ -19,7 +19,16 @@ They are grouped further by `General`, `Idle`, and `Writing Mode` quotes.
 
 How this may look in its `.json` file:
 
+```json
+    "general": [
+        "You are a background character in your own life.",
+    ],
+```
 
+
+Some rules of thumb:
+- Every quote line needs to end with a comma `,`.
+- Every quote line needs to be surrounded by double quotes `"`.
 
 ## Adding a new character
 
