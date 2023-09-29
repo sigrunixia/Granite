@@ -8,7 +8,32 @@ For this pages examples, I will use the following popular character: Pikachu.
 
 > 👿 Please DO NOT add a Pikachu animation to a public copy of this plugin. 
 
-## 1. Adding quotes to QuoteManager.ts
+## 1.  Update Settings.ts
+
+Now we need to make it so that you can toggle which character to use in your settings.
+
+### AnimationSourceType
+
+In the animation source type section, we need to define the name of the character for the animations we have loaded thus far.
+
+**Before**:
+
+```ts
+export enum AnimationSourceType {  
+    GEMMY = 'gemmy',  
+    DRAKE = 'drake',
+```
+
+**After**:
+
+```ts
+export enum AnimationSourceType {  
+    GEMMY = 'gemmy',  
+    DRAKE = 'drake',
+    PIKACHU = 'pikachu',  
+```
+
+## 2. Adding quotes to QuoteManager.ts
 
 > ⚠ If you have not already added your new character's quote lines in [Quotes](Quotes.ts), do that first. You can find instructions in [Adding quotes to Granite](Adding-quotes-to-Granite.md).
 
@@ -81,7 +106,7 @@ In the QuoteManager class, you will want to add your new character to the quote 
 		};
 ```
 
-## 2. Import your animations into Animations.ts
+## 3. Import your animations into Animations.ts
 
 To add your newly created animations into Granite to be rendered, we need to tell the plugin to process the gifs.
 
@@ -214,31 +239,6 @@ this.animationSourceMap = {
 ```
 
 
-## 3.  Update Settings.ts
-
-Now we need to make it so that you can toggle which character to use in your settings.
-
-### AnimationSourceType
-
-In the animation source type section, we need to define the name of the character for the animations we have loaded thus far.
-
-**Before**:
-
-```ts
-export enum AnimationSourceType {  
-    GEMMY = 'gemmy',  
-    DRAKE = 'drake',
-```
-
-**After**:
-
-```ts
-export enum AnimationSourceType {  
-    GEMMY = 'gemmy',  
-    DRAKE = 'drake',
-    PIKACHU = 'pikachu',  
-```
-
 ### PluginSettingsTab
 
 Now, we add the new character to the dropdown list.
@@ -262,50 +262,4 @@ Now, we add the new character to the dropdown list.
        .addOption(AnimationSourceType.PIKACHU, 'Pikachu')
 ```
 
-## 4. Update Main.ts
-
-This last update will tell Granite what to load based on the settings provided.
-
-### Async loadsettings
-
-Before:
-
-```ts
-async loadSettings() {  
-    this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());  
-  
-    // migrations  
-    // @ts-ignore    
-    if (this.settings.animationSource === 'dragon') {  
-       this.settings.animationSource = AnimationSourceType.DRAKE;  
-    }  
-    // @ts-ignore  
-    if (this.settings.animationSource === 'original') {  
-       this.settings.animationSource = AnimationSourceType.GEMMY;  
-    }  
-  
-    await this.saveSettings();  
-}
-```
-
-
-```ts
-async loadSettings() {  
-    this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());  
-  
-    // migrations 
-    if (this.settings.animationSource === 'rat') {  
-       this.settings.animationSource = AnimationSourceType.PIKACHU;  
-    }  
-    // @ts-ignore    
-    if (this.settings.animationSource === 'dragon') {  
-       this.settings.animationSource = AnimationSourceType.DRAKE;  
-    }  
-    // @ts-ignore  
-    if (this.settings.animationSource === 'original') {  
-       this.settings.animationSource = AnimationSourceType.GEMMY;  
-    }  
-  
-    await this.saveSettings();  
-}
-```
+And thats it!
