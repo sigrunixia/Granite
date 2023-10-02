@@ -60,6 +60,7 @@ export class Animations {
 
 		// Add your character to the animation map.
 		// Replace name with your new character's name.
+		// Be mindful of your indentations as comment mode strips them.
 		//
 		// 		this.nameAnimationMap = {
 		// 			[AnimationType.EMERGE]: EMERGE_MOTION_NAME,

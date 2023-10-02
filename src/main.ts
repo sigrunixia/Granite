@@ -77,6 +77,8 @@ export default class GranitePlugin extends Plugin {
 		this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
 
 		// migrations
+		// These are not needed for new characters
+		// but are needed for users who used the original animations before they were renamed.
 		// @ts-ignore
 		if (this.settings.animationSource === 'dragon') {
 			this.settings.animationSource = AnimationSourceType.DRAKE;
